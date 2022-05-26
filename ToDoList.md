@@ -26,6 +26,7 @@
       - [ ] scoreboard
         - [ ] card par unité
         - [ ] lien events
+    - [ ] upgrade responsive behavior
 
     - [x] discord
     - [x] steam
