@@ -1,0 +1,32 @@
+@import url('./vars.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+  list-style-type: none;
+  text-decoration: none;
+
+  transition: all 0.15s ease;
+}
+
+*:visited, *:any-link {
+  color: inherit;
+}
+
+body {
+  background: var(--pri-bg-color);
+  color: var(--pri-txt-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}

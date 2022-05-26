@@ -1,0 +1,9 @@
+
+
+.navigator {
+    display: flex;
+    align-self: center;
+    position: relative;
+    /* background-color: lime; */
+}
+

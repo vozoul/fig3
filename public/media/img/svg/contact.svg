@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.152" height="34" viewBox="0 0 33.152 34">
+	<g id="Calque_2" data-name="Calque 2" transform="translate(0 -0.24)">
+	  <path id="Tracé_4" data-name="Tracé 4" d="M21.7,16.449c-2.708-1.794-5.143-3.774-6.369-10.089C14.472,1.931,13.823.673,13.539.317a.2.2,0,0,0-.32,0c-.285.356-.934,1.614-1.794,6.042-1.228,6.315-3.661,8.3-6.369,10.089C2.209,18.334,0,20.935,0,26.059S6.671,34.24,13.378,34.24s13.378-3.058,13.378-8.181S24.548,18.334,21.7,16.449Z" fill="#8b368b"/>
+	  <path id="Tracé_5" data-name="Tracé 5" d="M62.8,4.579c-.674-3-1.179-3.96-1.422-4.262a.2.2,0,0,0-.32,0c-.241.3-.746,1.26-1.422,4.262a1.955,1.955,0,0,0,3.165,0Z" transform="translate(-47.844)" fill="#539933"/>
+	  <circle id="Ellipse_6" data-name="Ellipse 6" cx="3.821" cy="3.821" r="3.821" transform="translate(13.887 18.205)" fill="#fff"/>
+	  <circle id="Ellipse_7" data-name="Ellipse 7" cx="3.821" cy="3.821" r="3.821" transform="translate(5.024 25.631) rotate(-86.83)" fill="#fff"/>
+	  <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.844" cy="2.844" r="2.844" transform="translate(14.296 20.015)" fill="#1f1f1f"/>
+	  <circle id="Ellipse_9" data-name="Ellipse 9" cx="2.844" cy="2.844" r="2.844" transform="translate(6.772 20.015)" fill="#1f1f1f"/>
+	  <g id="Groupe_5" data-name="Groupe 5" transform="translate(13.98 3.339)">
+		<path id="Tracé_6" data-name="Tracé 6" d="M88.123,31.976l-3.885,7.876L70.68,33.164l7.055-1.873-3.173-6L84.122,23Z" transform="translate(-70.68 -21.598)" fill="#eab54f"/>
+		<path id="Tracé_7" data-name="Tracé 7" d="M90.225,15.91l11,5.427L97.017,29.88,86.01,24.453Z" transform="translate(-82.978 -15.91)" fill="#eff0ee"/>
+		<g id="Groupe_4" data-name="Groupe 4" transform="translate(4.713 1.297)">
+		  <path id="Tracé_8" data-name="Tracé 8" d="M108.982,22.47,113.7,24.8l-.142.287-4.721-2.328Z" transform="translate(-106.006 -22.47)" fill="#dcd8dd"/>
+		  <path id="Tracé_9" data-name="Tracé 9" d="M105.4,29.74l5.809,2.866-.142.287-5.809-2.864Z" transform="translate(-103.134 -28.302)" fill="#dcd8dd"/>
+		  <path id="Tracé_10" data-name="Tracé 10" d="M139.482,46.55,142,47.792l-.142.287-2.52-1.242Z" transform="translate(-130.473 -41.787)" fill="#dcd8dd"/>
+		  <path id="Tracé_11" data-name="Tracé 11" d="M101.812,37.01,104,38.088l-.142.287L101.67,37.3Z" transform="translate(-100.254 -34.134)" fill="#dcd8dd"/>
+		  <path id="Tracé_12" data-name="Tracé 12" d="M116.192,44.1l6.418,3.165-.142.287-6.418-3.165Z" transform="translate(-111.79 -39.822)" fill="#dcd8dd"/>
+		  <path id="Tracé_13" data-name="Tracé 13" d="M98.232,44.28l4.581,2.259-.142.287L98.09,44.569Z" transform="translate(-97.382 -39.966)" fill="#dcd8dd"/>
+		  <path id="Tracé_14" data-name="Tracé 14" d="M125.562,57.76l3.853,1.9-.142.287-3.853-1.9Z" transform="translate(-119.306 -50.78)" fill="#dcd8dd"/>
+		  <path id="Tracé_15" data-name="Tracé 15" d="M103.911,56.125l-.142.287L94.51,51.847l.142-.287" transform="translate(-94.51 -45.806)" fill="#dcd8dd"/>
+		</g>
+		<path id="Tracé_16" data-name="Tracé 16" d="M125.01,69.525l2.809,6.739,0,0,3.885-7.876Z" transform="translate(-114.264 -58.01)" fill="#f6c863"/>
+		<path id="Tracé_17" data-name="Tracé 17" d="M77.737,40.575l-7.055,1.873,0,0,3.885-7.876Z" transform="translate(-70.68 -30.879)" fill="#f6c863"/>
+		<path id="Tracé_18" data-name="Tracé 18" d="M84.235,73.478,70.68,66.793l7.055-1.873,3.689,1.82Z" transform="translate(-70.68 -55.226)" fill="#eab54f"/>
+	  </g>
+	  <path id="Tracé_19" data-name="Tracé 19" d="M142.134,74.838l1.108.736a1.344,1.344,0,0,1,.376,1.861l-1.474,2.219a1.344,1.344,0,0,1-1.861.376l-1.108-.736a2.674,2.674,0,0,1-.748-3.707h0A2.672,2.672,0,0,1,142.134,74.838Z" transform="translate(-110.69 -59.485)" fill="#8b368b"/>
+	</g>
+  </svg>

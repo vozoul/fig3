@@ -1,0 +1,166 @@
+.serv-card {
+    position: relative;
+    width: 250px;
+    margin: 20px;
+}
+
+.card-header {
+    height: 20px;
+    text-align: center;
+}
+
+.card-header img {
+    height: 60px;
+    width: 60px;
+    filter: drop-shadow(0px 3px 5px #1a1a1a)
+}
+
+.server-name {
+    display: flex;
+    height: 60px;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.online, .offline {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+
+    height: 20px;
+    width: 20px;
+
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px 0 var(--pri-revert-color)
+}
+
+.online {
+    background: lime;
+}
+
+.offline {
+    background: red;
+}
+
+.card-content {
+    height: 400px;
+    margin-top: 10px;
+    padding-top: 100px;
+    background: var(--sec-bg-color);
+    border-radius: 15px 15px 0 15px;
+    box-shadow: 3px 3px 7px var(--pri-box-shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.card-content-element {
+    margin: 0 auto;
+    width: 80%;
+    overflow-y: auto;
+    display: none;
+}
+
+.card-content-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-content div:first-child {
+    border-top: 3px solid var(--btn-bg-color);
+    padding-top: 10px;
+}
+
+.active-content {
+    display: block;
+}
+
+.card-footer .active-tab {
+    background: var(--btn-bg-color);
+}
+
+.connector {
+    position: absolute;
+    transform: translatex(-60%) translateY(5px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.connector img {
+    height: 22px;
+    width: 22px;
+    filter: drop-shadow(0px 0px 3px var(--pri-revert-color))
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inline p, .inline div {
+    margin-top: 5px;
+}
+
+.inline p {
+    flex: 1.5;
+}
+
+.inline .description {
+    flex: 1;
+}
+
+.left, .right {
+    width: 50%
+}
+
+.description .left {
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.card-content .right {
+    background: var(--btn-bg-color);
+    color: var(--brand-txt-color);
+    border-radius: 0 5px 5px 0;
+    /* box-shadow: inset 0 0 5px 0 var(--pri-revert-color) */
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.card-footer div {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--sec-bg-color);
+    box-shadow: 0 0 5px 0 var(--pri-box-shadow-color);
+    border-radius: 0 0 7px 7px;
+}
+
+.card-footer div:hover {
+    background: var(--btn-bg-color);
+    cursor: pointer;
+    height: 40px;
+}
+
+.card-footer img {
+    height: 25px;
+    width: 25px;
+}
+
+.card-content .scrollable {
+    border: none !important;
+}

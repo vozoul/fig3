@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.857" height="34" viewBox="0 0 38.857 34">
+	<g id="Calque_2" data-name="Calque 2" transform="translate(-2.22)">
+	  <g id="Groupe_6" data-name="Groupe 6" transform="translate(21.236)">
+		<path id="Tracé_20" data-name="Tracé 20" d="M119.079,12.017c-2.008-1.329-3.812-2.8-4.722-7.48-.638-3.284-1.119-4.216-1.33-4.48a.153.153,0,0,0-.238,0c-.211.264-.691,1.2-1.33,4.48-.91,4.682-2.714,6.15-4.722,7.48a7.726,7.726,0,0,0-3.748,7.124c0,3.8,4.946,6.065,9.921,6.065s9.921-2.266,9.921-6.065A7.737,7.737,0,0,0,119.079,12.017Z" transform="translate(-102.99 0)" fill="#7b327d"/>
+		<path id="Tracé_21" data-name="Tracé 21" d="M151.668,3.216A9,9,0,0,0,150.613.057a.153.153,0,0,0-.238,0,9.046,9.046,0,0,0-1.055,3.159,1.451,1.451,0,0,0,2.348,0Z" transform="translate(-140.577 0)" fill="#539933"/>
+		<circle id="Ellipse_10" data-name="Ellipse 10" cx="2.833" cy="2.833" r="2.833" transform="translate(10.294 13.319)" fill="#fff"/>
+		<circle id="Ellipse_11" data-name="Ellipse 11" cx="2.833" cy="2.833" r="2.833" transform="translate(3.876 13.319)" fill="#fff"/>
+		<circle id="Ellipse_12" data-name="Ellipse 12" cx="2.11" cy="2.11" r="2.11" transform="translate(10.598 14.661)" fill="#1f1f1f"/>
+		<circle id="Ellipse_13" data-name="Ellipse 13" cx="2.11" cy="2.11" r="2.11" transform="translate(5.02 14.661)" fill="#1f1f1f"/>
+	  </g>
+	  <g id="Groupe_7" data-name="Groupe 7" transform="translate(2.22)">
+		<path id="Tracé_22" data-name="Tracé 22" d="M18.311,12.017c-2.008-1.329-3.812-2.8-4.722-7.48C12.95,1.253,12.469.321,12.258.057a.153.153,0,0,0-.238,0c-.211.264-.691,1.2-1.33,4.48-.91,4.682-2.714,6.15-4.722,7.48A7.729,7.729,0,0,0,2.22,19.143c0,3.8,4.946,6.065,9.921,6.065s9.921-2.266,9.921-6.065A7.734,7.734,0,0,0,18.311,12.017Z" transform="translate(-2.22 0)" fill="#7b327d"/>
+		<path id="Tracé_23" data-name="Tracé 23" d="M50.908,3.216A9,9,0,0,0,49.853.057a.153.153,0,0,0-.238,0A9.046,9.046,0,0,0,48.56,3.216a1.451,1.451,0,0,0,2.348,0Z" transform="translate(-39.815 0)" fill="#539933"/>
+		<circle id="Ellipse_14" data-name="Ellipse 14" cx="2.833" cy="2.833" r="2.833" transform="translate(10.296 13.319)" fill="#fff"/>
+		<circle id="Ellipse_15" data-name="Ellipse 15" cx="2.833" cy="2.833" r="2.833" transform="translate(3.878 13.319)" fill="#fff"/>
+		<circle id="Ellipse_16" data-name="Ellipse 16" cx="2.11" cy="2.11" r="2.11" transform="translate(10.598 14.661)" fill="#1f1f1f"/>
+		<circle id="Ellipse_17" data-name="Ellipse 17" cx="2.11" cy="2.11" r="2.11" transform="translate(5.02 14.661)" fill="#1f1f1f"/>
+	  </g>
+	  <path id="Tracé_24" data-name="Tracé 24" d="M58.235,23.745c-2.583-1.712-4.906-3.6-6.076-9.626-.821-4.225-1.44-5.425-1.712-5.765a.2.2,0,0,0-.306,0c-.272.34-.891,1.54-1.712,5.765-1.172,6.026-3.493,7.915-6.076,9.626-2.716,1.8-4.823,4.28-4.823,9.168s6.365,7.805,12.764,7.805S63.059,37.8,63.059,32.912,60.951,25.543,58.235,23.745Z" transform="translate(-28.647 -6.717)" fill="#8b368b"/>
+	  <path id="Tracé_25" data-name="Tracé 25" d="M100.179,12.428c-.644-2.865-1.125-3.776-1.357-4.065a.2.2,0,0,0-.306,0c-.232.289-.713,1.2-1.357,4.065a1.865,1.865,0,0,0,3.019,0Z" transform="translate(-77.024 -6.726)" fill="#539933"/>
+	  <circle id="Ellipse_18" data-name="Ellipse 18" cx="3.646" cy="3.646" r="3.646" transform="translate(22.131 18.703)" fill="#fff"/>
+	  <circle id="Ellipse_19" data-name="Ellipse 19" cx="3.646" cy="3.646" r="3.646" transform="translate(13.871 18.703)" fill="#fff"/>
+	  <circle id="Ellipse_20" data-name="Ellipse 20" cx="2.714" cy="2.714" r="2.714" transform="translate(22.521 20.43)" fill="#1f1f1f"/>
+	  <circle id="Ellipse_21" data-name="Ellipse 21" cx="2.714" cy="2.714" r="2.714" transform="translate(15.345 20.43)" fill="#1f1f1f"/>
+	</g>
+  </svg>

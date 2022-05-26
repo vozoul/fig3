@@ -1,0 +1,93 @@
+:root {
+  --box-width: 30%;
+  --box-height: 110px;
+}
+
+Header {
+  height: var(--box-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 10px 10px 25px;
+  border-bottom: 5px solid var(--btn-bg-color);
+}
+
+.sec-title::after {
+    content: "";
+    position: relative;
+    top: 50px;
+    left: -50%;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 10px solid var(--btn-bg-color);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.container {
+  width: calc(100vw - var(--deployed-menu));
+  height: calc(100vh - 130px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+  
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container.scrollable {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+}
+
+.container::-webkit-scrollbar-track { 
+  background-color: var(--pri-bg-color); 
+  border: 3px solid var(--sec-bg-color);
+  border-radius: 9px; 
+} 
+
+.menu.collapsed + .container {
+  width: calc(100vw - var(--collapsed-menu));
+}
+
+input {
+  width:100%;
+  border: 1px solid var(--sec-bg-color);
+  background: var(--pri-bg-color);
+  color: var(--pri-txt-color);
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 4px 0 var(--sec-box-shadow-color);
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: calc(100vw - 70px);
+  }
+}
