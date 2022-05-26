@@ -52,7 +52,7 @@ const Menu = () => {
                     <img src="./media/img/svg/servers.svg" alt="" />
                     <span>Servers</span>
                 </Link>
-                <Link to="/about" className="menu-item">
+                <Link to="/contact" className="menu-item">
                     <img src="./media/img/svg/contact.svg" alt="" />
                     <span>Contact</span>
                 </Link>

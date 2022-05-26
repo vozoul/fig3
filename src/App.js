@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, About, Sign, Servers, Members, Error } from "./pages"
+import { Home, Contact, Sign, Servers, Members, Error } from "./pages"
 import { Brand, Menu, Footer, Socials } from './components';
 import {AppContext} from './services/contexts/AppContext';
 import config from "./services/config/config.js"
@@ -35,7 +35,7 @@ function App() {
           <Menu />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/members" element={<Members />} />
             <Route path="/servers" element={<Servers />} />
             <Route path="/sign" element={<Sign />} />

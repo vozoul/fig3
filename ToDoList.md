@@ -36,8 +36,7 @@
     - [x] membres
     - [x] servers
     - [ ] events
-    - [ ] contact
-    - [x] à propos (à supprimer)
+    - [x] contact
 
 - - [ ] navigations par onglets
     - [x] carte server (évolution à venir)
