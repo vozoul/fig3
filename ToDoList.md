@@ -10,8 +10,14 @@
 
 - - [ ] serveurs 
     - [x] carte par unité
-      - [ ] infos serveur
-      - [ ] joueur connectés
+      - [x] infos serveur
+      - [x] joueur connectés
+      - [ ] options supplémentaires
+        - [ ] informations serveur (message d'admin)
+      - [ ] options admin supplémentaires
+        - [ ] RCON commandes
+        - [ ] modification du serveur
+        - [ ] suppression du serveur
     - [ ] formulaire d'ajout de serveur (admin only)
 
 - - [ ] socials,
@@ -30,9 +36,11 @@
     - [x] servers
     - [ ] events
     - [ ] contact
-    - [ ] à propos
+    - [x] à propos (à supprimer)
 
-- - [ ] navigation par onglets
+- - [ ] navigations par onglets
+    - [x] carte server (évolution à venir)
+    - [ ] page membre
 
 ## A faire:
 
@@ -41,6 +49,7 @@
     - [ ] connections d'un utilisateur
     - [ ] membres carte par unité,
     - [ ] affichage d'une entité,
+    - [ ] modifier un membre
 
 - - [ ] gestion des évents 
     - [ ] definir les specs
@@ -50,3 +59,4 @@
 - - [ ] API
     - [ ] endpoints api
     - [ ] liens api 
+    - [ ] actions
