@@ -1,7 +1,7 @@
 export {default as Brand} from './Layout/Brand/Brand'
 export {default as Menu} from './Layout/Menu/Menu'
 export {default as Socials} from './Layout/Socials/Socials'
-export {default as Footer} from './Footer/Footer'
+export {default as Footer} from './Layout/Footer/Footer'
 export {default as SwitchButton} from './Layout/SwitchButton/SwitchButton'
 export {default as MemberList} from './Lists/MemberList'
 export {default as ServerList} from './Lists/ServerList'

@@ -31,6 +31,5 @@
 
 .addServer_button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 7px 0 #fff;
     cursor: pointer;
 }

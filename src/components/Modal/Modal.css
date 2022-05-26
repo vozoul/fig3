@@ -22,7 +22,7 @@
     background: var(--sec-bg-color);
     
     border-radius: 15px;
-    box-shadow: 0 0 5px 1px #fff;
+    box-shadow: 0 0 5px -1px #fff;
     z-index: 1001;
 }
 
@@ -31,8 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -17px;
-    right: 15px;
+    top: -30px;
+    right: 12px;
     
     background: var(--btn-bg-color);
     color: var(--brand-txt-color);
@@ -42,6 +42,6 @@
     
     border: none;
     border-radius: 50%;
-    box-shadow: 0 0 5px 1px #fff;
+    box-shadow: 0 0 3px #fff;
     z-index: 1002;
 }
