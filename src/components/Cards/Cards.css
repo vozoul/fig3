@@ -14,6 +14,8 @@
     border-radius: 15px;
     box-shadow: 3px 3px 7px var(--pri-box-shadow-color);
     padding: 2px 10px;
+    background: var(--sec-bg-color);
+    z-index: 10;
 }
 
 .member-card img {
@@ -21,7 +23,8 @@
     width: 50px;
     border-radius: 50%;
     border: 2px solid transparent;
-    box-shadow: 0 0 10px var(--pri-box-shadow-color);
+    box-shadow: 0 0 7px #1f2224;
+    z-index: 10;
 }
 
 .card-header {
@@ -66,16 +69,31 @@
 }
 
 .card-content {
+    background-color: var(--sec-bg-color);
     height: 400px;
     margin-top: 10px;
     padding-top: 100px;
-    background: var(--sec-bg-color);
     border-radius: 15px 15px 0 15px;
     box-shadow: 3px 3px 7px var(--pri-box-shadow-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
+}
+
+.serv-card:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+    opacity: .3;
+    background: url('../../../public/media/img/svg/bg_servers.svg') no-repeat;
+    background-position: bottom 65px left -30px;
+    background-size: 60%;
+    border-radius: 15px;
 }
 
 .card-content-element {
@@ -185,34 +203,48 @@
     border: none !important;
 }
 
+.member-card:after {
+}
 
-.guest {
-    background: url("../../../public/media/img/svg/fig_vert.svg") no-repeat left, var(--sec-bg-color);
+.member-card.guest:after {
+    background: url("../../../public/media/img/svg/fig_vert.svg");
     background-size: 280px;
     background-position-x: -95px;
     background-position-y: -95px;
 }
 
-.new {
-    background: url("../../../public/media/img/svg/fig_bleu.svg") no-repeat left, var(--sec-bg-color);
+.member-card.new:after {
+    background: url("../../../public/media/img/svg/fig_bleu.svg");
 }
 
-.member {
-    background: url("../../../public/media/img/svg/fig_violet.svg") no-repeat left, var(--sec-bg-color);
+.member-card.member:after {
+    background: url("../../../public/media/img/svg/fig_violet.svg");
 }
 
-.modo {
-    background: url("../../../public/media/img/svg/fig_orange.svg") no-repeat left, var(--sec-bg-color);
+.member-card.modo:after {
+    background: url("../../../public/media/img/svg/fig_orange.svg");
 }
 
-.admin {
-    background: url("../../../public/media/img/svg/fig_rouge.svg") no-repeat left, var(--sec-bg-color);
+.member-card.admin:after {
+    background: url("../../../public/media/img/svg/fig_rouge.svg");
 }
 
-.new, .member, .modo, .admin {
+.member-card.new:after, .member-card.member:after, .member-card.modo:after, .member-card.admin:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+    border-radius: 15px;
+    padding: 0;
     background-size: 240px;
     background-position-x: -135px;
     background-position-y: -120px;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .inactive {
@@ -221,4 +253,8 @@
 
 .active {
     display: flex;
+}
+
+.user-infos {
+    z-index: 10;
 }
