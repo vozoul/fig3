@@ -9,6 +9,10 @@
     transform: translateX(-25%);
 }
 
+.container.inner {
+    width: 80%;
+}
+
 .element {
     position: relative;
     display: flex;
