@@ -15,6 +15,7 @@
       - [ ] options supplémentaires
         - [ ] informations serveur (message d'admin)
       - [ ] options admin supplémentaires
+        - [ ] formulaire ajout de serveur
         - [ ] RCON commandes
         - [ ] modification du serveur
         - [ ] suppression du serveur

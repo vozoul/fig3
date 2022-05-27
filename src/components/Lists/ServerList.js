@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react"
 import {ServerCard, Modal, AddServerForm} from "components"
-import Servers from "../../services/fakesData/servers_long"
+import Servers from "services/fakesData/servers_long"
 import { UserContext } from 'services/contexts/UserContext'
 import "./Lists.css"
 

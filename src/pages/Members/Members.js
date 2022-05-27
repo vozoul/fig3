@@ -1,5 +1,5 @@
 import React, {useRef, useEffect, useState, useContext} from "react"
-// import {MemberList} from "components"
+import {MemberList} from "components"
 import {AppContext} from "services/contexts/AppContext"
 import "./Members.css"
 
@@ -7,6 +7,7 @@ const Members = () => {
     const eRef = useRef()
     const [hght, setHght] = useState()
     const [inHght, setInHght] = useState()
+    const [show, setShow] = useState("all")
     const {toggleSectionTitle} = useContext(AppContext)
 
     useEffect(() => {
@@ -35,15 +36,23 @@ const Members = () => {
         <div className="container">
         <div className="navigator">
             {/* //TODO */}
-            <div>admin</div>
-            <div>modo</div>
-            <div>membres</div>
-            <div>nouveaux</div>
-            <div>tous</div>
+            <div className="element" onClick={() => setShow("admin")}>
+                <img src="./media/img/svg/fig_rouge.svg" alt="admin" />
+                <p>admins</p>
+            </div>
+            <div className="element" onClick={() => setShow("modo")}>
+                <img src="./media/img/svg/fig_orange.svg" alt="admin" />
+                <p>modos</p></div>
+            <div className="element" onClick={() => setShow("member")}>
+                <img src="./media/img/svg/fig_violet.svg" alt="admin" />
+                <p>membres</p></div>
+            <div className="element" onClick={() => setShow("new")}>
+                <img src="./media/img/svg/fig_bleu.svg" alt="admin" />
+                <p>newbies</p></div>
+            <div className="element" onClick={() => setShow("all")}>ALL</div>
         </div>
-        <div ref={eRef} className="container inner">
-            <h2>Membres</h2>
-            {/* //TODO <MemberList /> */}
+        <div ref={eRef} className="container inner" >
+            <MemberList show={show} />
         </div>
         </div>
     )
