@@ -4,7 +4,7 @@ module.exports = [
         "pseudo": "Pozoul",
         "avatar": null,
         "steamId": null,
-        "role": 100,
+        "role": 999,
         "createdAt": "2022-01-28T10:53:43.866Z"
     },
     {

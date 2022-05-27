@@ -7,9 +7,9 @@ const MemberCard = ({props, show}) => {
     const isRoled = (role) => {
         if (role < 300) return "guest"
         if (role === 300 && role < 700) return "new"
-        if (role === 700 && role < 800) return "member"
+        if (role === 700 && role < 800 || role === 999) return "member"
         if (role === 800 && role < 900) return "modo"
-        if (role > 900) return "admin"
+        if (role > 900 && role !== 999) return "admin"
         if (role === 999) return "member"
     }
 
