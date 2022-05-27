@@ -1,9 +1,57 @@
-
-
 .navigator {
-    display: flex;
-    align-self: center;
     position: relative;
-    /* background-color: lime; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: translateX(-25%);
 }
 
+.container.inner {
+    width: 100%;
+}
+
+.element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--sec-bg-color);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 0.6em;
+    box-shadow: 0 0 5px 0 var(--pri-box-shadow-color);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.element:hover {
+    background: var(--btn-bg-color);
+    box-shadow: 0 0 5px 0 #fff;
+}
+
+
+.element img {
+    height: 35px;
+    width: 35px;
+}
+
+.element:after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 9px);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 10px solid var(--sec-bg-color);
+    z-index: 900;
+}
+
+.element:hover:after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 10px solid var(--btn-bg-color);
+}

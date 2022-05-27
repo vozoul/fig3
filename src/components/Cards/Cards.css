@@ -4,6 +4,26 @@
     margin: 20px;
 }
 
+.member-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px var(--pri-box-shadow-color);
+    padding: 2px 10px;
+}
+
+.member-card img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px var(--pri-box-shadow-color);
+}
+
 .card-header {
     height: 20px;
     text-align: center;
@@ -163,4 +183,42 @@
 
 .card-content .scrollable {
     border: none !important;
+}
+
+
+.guest {
+    background: url("../../../public/media/img/svg/fig_vert.svg") no-repeat left, var(--sec-bg-color);
+    background-size: 280px;
+    background-position-x: -95px;
+    background-position-y: -95px;
+}
+
+.new {
+    background: url("../../../public/media/img/svg/fig_bleu.svg") no-repeat left, var(--sec-bg-color);
+}
+
+.member {
+    background: url("../../../public/media/img/svg/fig_violet.svg") no-repeat left, var(--sec-bg-color);
+}
+
+.modo {
+    background: url("../../../public/media/img/svg/fig_orange.svg") no-repeat left, var(--sec-bg-color);
+}
+
+.admin {
+    background: url("../../../public/media/img/svg/fig_rouge.svg") no-repeat left, var(--sec-bg-color);
+}
+
+.new, .member, .modo, .admin {
+    background-size: 240px;
+    background-position-x: -135px;
+    background-position-y: -120px;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: flex;
 }

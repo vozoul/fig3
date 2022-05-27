@@ -1,9 +1,14 @@
-.serv-list {
+.serv-list, .member-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.member-list {
+    padding: 0 10%;
+    margin: 0;
 }
 
 .addServer_button {
