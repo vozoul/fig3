@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+.member-list {
+    padding: 0 10%;
+    margin: 0;
+}
+
 .addServer_button {
     position: absolute;
     background: var(--btn-bg-color);

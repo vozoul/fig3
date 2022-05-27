@@ -19,6 +19,9 @@
 .member-card img {
     height: 40px;
     width: 40px;
+    border-radius: 50%;
+    border: 1px solid #464646;
+    box-shadow: 0 0 7px #fff;
 }
 
 .card-header {
@@ -208,7 +211,7 @@
 
 .new, .member, .modo, .admin {
     background-size: 240px;
-    background-position-x: -90px;
+    background-position-x: -135px;
     background-position-y: -120px;
 }
 
