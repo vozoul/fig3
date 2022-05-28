@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, Contact, Sign, Servers, Members, Error } from "./pages"
-import { Brand, Menu, Footer, Socials } from './components';
+import { Home, Sign, Servers, Members, Error } from "./pages"
+import { Brand, Menu, Footer, Socials, Modal } from './components';
 import {AppContext} from './services/contexts/AppContext';
 import config from "./services/config/config.js"
 import './styles/App.css';
@@ -9,7 +9,14 @@ import './styles/App.css';
 
 function App() {
 
-  const {theme, toggleTheme, sectionTitle} = useContext(AppContext)
+  const {
+    theme,
+    toggleTheme,
+    showModal,
+    useModal,
+    sectionTitle
+  } = useContext(AppContext)
+  
   useEffect(() => {
     const style = config.style[theme]
     document.title = config.appName
@@ -21,6 +28,7 @@ function App() {
       }
     }
   }, [theme, toggleTheme])
+
 
 
   return (
@@ -35,7 +43,6 @@ function App() {
           <Menu />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/members" element={<Members />} />
             <Route path="/servers" element={<Servers />} />
             <Route path="/sign" element={<Sign />} />
@@ -43,7 +50,9 @@ function App() {
           </Routes>
         </div>
         <Footer />
-        {/* <Admin /> */}
+        {showModal && <Modal>
+                {useModal}
+            </Modal>}
       </BrowserRouter>
     </div>
   );

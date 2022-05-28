@@ -1,13 +1,17 @@
+import {useContext} from 'react'
+import { AppContext } from 'services/contexts/AppContext'
 import "./Modal.css"
 
-const Modal = (props) => {
-    const {close} = props
+const Modal = () => {
+    const {useModal, toggleModal, modalBg} = useContext(AppContext)
+
+    document.documentElement.style.setProperty("--modal-bg", modalBg)
 
     return (
-        <div className="modal_back">
+        <div className="modal_back" onClick={toggleModal}>
             <div className="modal">
-                <button className="exit" onClick={close}>X</button>
-                {props.children}
+                <button className="exit" onClick={toggleModal}>X</button>
+                {useModal}
             </div>
         </div>
     )

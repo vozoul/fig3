@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 200px;
+    width: 220px;
     margin: 20px;
     border-radius: 15px;
     box-shadow: 3px 3px 7px var(--pri-box-shadow-color);

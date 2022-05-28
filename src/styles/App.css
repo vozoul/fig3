@@ -75,7 +75,7 @@ Header {
   width: calc(100vw - var(--collapsed-menu));
 }
 
-input {
+input, textarea {
   width:100%;
   border: 1px solid var(--sec-bg-color);
   background: var(--pri-bg-color);

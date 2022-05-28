@@ -9,7 +9,8 @@ const MemberList = (props) => {
 
     return (
         <div className="member-list">
-            {Users.map((user) => {
+            {Users.length === 0 && "No users to display"}
+            {Users.length > 0 && Users.map((user) => {
                 return(<MemberCard show={show} props={user}  key={user.id} />)
             })
             }

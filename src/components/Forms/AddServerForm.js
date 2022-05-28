@@ -1,7 +1,15 @@
-const AddServerForm = (props) => {
+import {useContext} from 'react'
+import { AppContext } from 'services/contexts/AppContext';
+import "./AddServerForm.css"
 
-    const submit = () => {
-        props.close()
+const AddServerForm = () => {
+
+    const {toggleModal} = useContext(AppContext)
+
+    const submit = (e) => {
+        e.preventDefault()
+        console.log('submitted')
+        toggleModal()
     };
 
     return (
@@ -18,7 +26,7 @@ const AddServerForm = (props) => {
                 <input id="port" name="port" type="text" />
             </div>
             <div style={{float: "right"}}>
-                <button onClick={submit}>Submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
     )

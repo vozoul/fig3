@@ -26,6 +26,23 @@
     z-index: 1001;
 }
 
+.modal:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    z-index: -1;
+    opacity: .3;
+    background: var(--modal-bg);
+    background-position: bottom 65px left -30px;
+    background-size: 60%;
+    border-radius: 15px;
+}
+
 .exit {
     position: absolute;
     display: flex;

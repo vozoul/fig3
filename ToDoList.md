@@ -7,6 +7,12 @@
 - - [x] persistance d'état menu & thème
 
 ## En cours:
+- - [ ] navigation
+    - [x] home
+    - [x] membres
+    - [x] servers
+    - [ ] events
+    - [x] contact
 
 - - [ ] serveurs 
     - [x] carte par unité
@@ -32,18 +38,14 @@
     - [x] discord
     - [x] steam
 
-- - [ ] navigation
-    - [x] home
-    - [x] membres
-    - [x] servers
-    - [ ] events
-    - [x] contact
+
 
 - - [ ] navigations par onglets
     - [x] carte server (évolution à venir)
     - [ ] page membre
 
 ## A faire:
+- - [ ] contact à transformer en modale
 
 - - [ ] users
     - [ ] enregistrer un utilisateur

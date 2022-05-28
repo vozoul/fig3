@@ -2,12 +2,12 @@ import React, {useState, useEffect, useRef, useContext} from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "services/contexts/AppContext";
 import './Menu.css'
-import SwitchButton from "components/Layouts/SwitchButton/SwitchButton";
+import {SwitchButton, ContactForm} from "components";
 
 const Menu = () => {
 
     // Constantes
-    const {menu, toggleMenu} = useContext(AppContext)
+    const {menu, toggleMenu, setModalBg, setUseModal, toggleModal} = useContext(AppContext)
 
     const eRef = useRef()
     const [menuClass, setMenuClass] = useState('menu')
@@ -35,6 +35,12 @@ const Menu = () => {
             eRef.current.classList.remove('scrollable')
         }
     }, [inHght, hght])
+
+    const contactus = () => {
+        setModalBg("url('./media/img/svg/contact.svg') no-repeat")
+        setUseModal(<ContactForm />)
+        toggleModal()
+    }
     
     // Partie visuelle
     return (
@@ -52,10 +58,10 @@ const Menu = () => {
                     <img src="./media/img/svg/servers.svg" alt="" />
                     <span>Servers</span>
                 </Link>
-                <Link to="/contact" className="menu-item">
+                <p className="menu-item" onClick={() => contactus()}>
                     <img src="./media/img/svg/contact.svg" alt="" />
                     <span>Contact</span>
-                </Link>
+                </p>
                 <p className="menu-item arrow" onClick={toggleMenu}>
                     <img src="./media/img/svg/rightArrow.svg" alt="" />
                     <span>Collapse</span>

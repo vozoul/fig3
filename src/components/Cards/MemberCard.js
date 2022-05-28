@@ -1,19 +1,21 @@
+import {useState, useEffect} from 'react'
 import './Cards.css'
 
 const MemberCard = ({props, show}) => {
 
     const {pseudo, avatar, role} = props
 
-    const isRoled = (role) => {
-        if (role < 300) return "guest"
-        if (role === 300 && role < 700) return "new"
-        if (role === 700 && role < 800 || role === 999) return "member"
-        if (role === 800 && role < 900) return "modo"
-        if (role > 900 && role !== 999) return "admin"
-        if (role === 999) return "member"
-    }
+    const [isRoled, setIsRoled] = useState("guest")
 
-    const userClass = ((show === "all" && isRoled(role) !== "guest") || (show === isRoled(role) && isRoled(role) !== "guest")) ? "member-card " + isRoled(role) + " active" : "member-card " + isRoled(role) + " inactive"
+    useEffect(() => {
+        if (role < 300) setIsRoled("guest")
+        if (role === 300 && role < 700) setIsRoled("new")
+        if ((role === 700 && role < 800) || role === 999) setIsRoled("member")
+        if (role === 800 && role < 900) setIsRoled("modo")
+        if (role > 900 && role !== 999) setIsRoled("admin")
+    }, [role, isRoled, setIsRoled])
+
+    const userClass = ((show === "all" && isRoled !== "guest") || (show === isRoled && isRoled !== "guest")) ? "member-card " + isRoled + " active" : "member-card " + isRoled + " inactive"
 
     return (
         <div className={userClass}>
