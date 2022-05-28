@@ -1,5 +1,5 @@
 .modal:after {
-    background: url('../../../public/media/img/svg/contact.svg') no-repeat;
+    background-image: url('/public/media/img/svg/membres.svg') no-repeat;
 }
 
 .on-off-choice {

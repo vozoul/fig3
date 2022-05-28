@@ -1,13 +1,18 @@
+// Layout components
 export {default as Brand} from './Layouts/Brand/Brand'
 export {default as Menu} from './Layouts/Menu/Menu'
 export {default as Socials} from './Layouts/Socials/Socials'
 export {default as Footer} from './Layouts/Footer/Footer'
-export {default as SwitchButton} from './Layouts/SwitchButton/SwitchButton'
-export {default as MemberList} from './Lists/MemberList'
-export {default as ServerList} from './Lists/ServerList'
-export {default as AddServerForm} from './Forms/AddServerForm'
-export {default as ContactForm} from './Forms/ContactForm'
-export {default as SignForm} from './Forms/SignForm'
-export {default as MemberCard} from './Cards/MemberCard'
-export {default as ServerCard} from './Cards/ServerCard'
-export {default as Modal} from './Modal/Modal'
+
+// UI Components
+export {default as Modal} from './UI_Components/Modal/Modal'
+export {default as SwitchButton} from './UI_Components/SwitchButton/SwitchButton'
+export {default as MemberList} from './UI_Components/Lists/MemberList'
+export {default as ServerList} from './UI_Components/Lists/ServerList'
+export {default as MemberCard} from './UI_Components/Cards/MemberCard'
+export {default as ServerCard} from './UI_Components/Cards/ServerCard'
+
+// Forms components
+export {default as AddServerForm} from './UI_Components/Forms/AddServerForm'
+export {default as ContactForm} from './UI_Components/Forms/ContactForm'
+export {default as SignForm} from './UI_Components/Forms/SignForm'

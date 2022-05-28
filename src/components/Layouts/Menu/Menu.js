@@ -37,13 +37,13 @@ const Menu = () => {
     }, [inHght, hght])
 
     const contactus = () => {
-        setModalBg("url('./media/img/svg/contact.svg') no-repeat")
+        setModalBg("url('./media/img/svg/contact.svg')")
         setUseModal(<ContactForm />)
         toggleModal()
     }
 
     const signIn = () => {
-        setModalBg("url('./media/img/svg/membres.svg') no-repeat")
+        setModalBg("url('./media/img/svg/membres.svg')")
         setUseModal(<SignForm />)
         toggleModal()
     }
