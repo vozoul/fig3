@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, Sign, Servers, Members, Error } from "./pages"
+import { Home, Servers, Members, Error } from "./pages"
 import { Brand, Menu, Footer, Socials, Modal } from './components';
 import {AppContext} from './services/contexts/AppContext';
 import config from "./services/config/config.js"
@@ -45,7 +45,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/members" element={<Members />} />
             <Route path="/servers" element={<Servers />} />
-            <Route path="/sign" element={<Sign />} />
+            {/* <Route path="/sign" element={<Sign />} /> */}
             <Route path="*" element={<Error />} />
           </Routes>
         </div>

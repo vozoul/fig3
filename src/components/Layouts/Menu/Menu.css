@@ -50,6 +50,10 @@
     border-radius: 0 25px 25px 0;
 }
 
+.menu-item * {
+    cursor: pointer;
+}
+
 .menu-item:hover {
     background: var(--btn-bg-color);
     box-shadow: 0 0 5px 0 #b5bbbe;
@@ -68,10 +72,6 @@
 
 .menu-item span {
     display: block;
-}
-
-.arrow {
-    cursor: pointer;
 }
 
 .arrow img {

@@ -8,7 +8,7 @@ const Modal = () => {
     document.documentElement.style.setProperty("--modal-bg", modalBg)
 
     return (
-        <div className="modal_back" onClick={toggleModal}>
+        <div className="modal_back">
             <div className="modal">
                 <button className="exit" onClick={toggleModal}>X</button>
                 {useModal}

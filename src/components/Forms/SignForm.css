@@ -1,0 +1,9 @@
+.modal:after {
+    background: url('../../../public/media/img/svg/contact.svg') no-repeat;
+}
+
+.on-off-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

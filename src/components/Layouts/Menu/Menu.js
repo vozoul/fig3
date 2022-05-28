@@ -2,12 +2,12 @@ import React, {useState, useEffect, useRef, useContext} from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "services/contexts/AppContext";
 import './Menu.css'
-import {SwitchButton, ContactForm} from "components";
+import {SwitchButton, ContactForm, SignForm} from "components";
 
 const Menu = () => {
 
     // Constantes
-    const {menu, toggleMenu, setModalBg, setUseModal, toggleModal} = useContext(AppContext)
+    const {menu, theme, toggleTheme, toggleMenu, setModalBg, setUseModal, toggleModal} = useContext(AppContext)
 
     const eRef = useRef()
     const [menuClass, setMenuClass] = useState('menu')
@@ -41,6 +41,12 @@ const Menu = () => {
         setUseModal(<ContactForm />)
         toggleModal()
     }
+
+    const signIn = () => {
+        setModalBg("url('./media/img/svg/membres.svg') no-repeat")
+        setUseModal(<SignForm />)
+        toggleModal()
+    }
     
     // Partie visuelle
     return (
@@ -68,13 +74,16 @@ const Menu = () => {
                 </p>
             </ul>
             <ul>
-                <SwitchButton />
+                <div className="menu-item">
+                    <SwitchButton id="theme-toggler" action={toggleTheme} />
+                    <label htmlFor="theme-toggler" className="style">{theme}</label>
+                </div>
             </ul>
             <ul className="sign">
-                <Link to="/sign" className="menu-item">
+                <p className="menu-item" onClick={() => signIn()}>
                     <i className='bx bx-log-in-circle'></i>
                     <span>Connexion</span>
-                </Link>
+                </p>
             </ul>
         </div>
     )

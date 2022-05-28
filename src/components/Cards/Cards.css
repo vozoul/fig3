@@ -176,7 +176,7 @@
     flex-direction: row-reverse;
     justify-content: flex-start;
     height: 50px;
-    z-index: 100000;
+    z-index: 10000;
 }
 
 .card-footer div {
@@ -189,7 +189,7 @@
     background: var(--sec-bg-color);
     box-shadow: 0 0 5px 0 var(--pri-box-shadow-color);
     border-radius: 0 0 7px 7px;
-    z-index: 100000;
+    z-index: 10000;
 }
 
 .card-footer div:hover {

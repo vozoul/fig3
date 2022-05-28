@@ -4,15 +4,15 @@ export const AppContext = createContext()
 
 const AppContextProvider = (props) => {
 
-
-    const [theme, setTheme] = useState(localStorage.theme ?? "dark")
+    //constantes
     const [menu, setMenu] = useState(localStorage.collapsedMenu ?? "false")
-
-    const [sectionTitle, setSectionTitle] = useState('Home')
-
     const [modalBg, setModalBg] = useState("")
-    const [useModal, setUseModal] = useState()
+    const [sectionTitle, setSectionTitle] = useState('Home')
     const [showModal, setShowModal] = useState(false)
+    const [theme, setTheme] = useState(localStorage.theme ?? "dark")
+    const [useModal, setUseModal] = useState()
+
+    //methodes
     const toggleModal = () => {
         setShowModal(!showModal)
     }
@@ -26,29 +26,30 @@ const AppContextProvider = (props) => {
         const nTheme = (theme === "dark") ? "light" : "dark"
         setTheme(nTheme)
     }
+    
+    const toggleSectionTitle = (title) => {
+        setSectionTitle(title)
+    }
 
+    //persistance
     useEffect(() => {
         localStorage.setItem("theme", theme)
         localStorage.setItem("collapsedMenu", menu)
     }, [theme, setTheme, menu, setMenu])
 
-    const toggleSectionTitle = (title) => {
-        setSectionTitle(title)
-    }
-
     return (
         <AppContext.Provider value={{
-            theme,
             menu,
-            sectionTitle,
-            useModal,
-            showModal,
             modalBg,
+            sectionTitle,
+            showModal,
+            theme,
+            useModal,
             setModalBg,
             setShowModal,
-            toggleModal,
             setUseModal,
             toggleMenu,
+            toggleModal,
             toggleTheme,
             toggleSectionTitle
         }}>
