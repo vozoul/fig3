@@ -20,9 +20,9 @@ const SignForm = () => {
         <form className="" onSubmit={submit}>
             <h3>{(signIn)? "Connection" : "Inscription"}</h3>
             <div className='on-off-choice'>
-                <div>Sign-up</div>
+                <div>Inscription</div>
                 <SwitchButton id="sign" action={toggleSign} />
-                <div>Sign-in</div>
+                <div>Connection</div>
             </div>
             <div>
                 <label htmlFor="name">Name</label>
@@ -34,7 +34,7 @@ const SignForm = () => {
             </div>
             {(!signIn) && <div>
                 <div>
-                    <label htmlFor="conf-password">Confirme Password</label>
+                    <label htmlFor="conf-password">Confirm Password</label>
                     <input id="conf-password" name="conf-password" type="password" />
                 </div>
                 <div>
