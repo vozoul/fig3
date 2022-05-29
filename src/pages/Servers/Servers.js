@@ -10,7 +10,7 @@ const Servers = () => {
     const {toggleSectionTitle} = useContext(AppContext)
 
     useEffect(() => {
-        toggleSectionTitle('Servers')
+        toggleSectionTitle('Nos Serveurs')
     }, [toggleSectionTitle])
 
     const getHeight = () => {

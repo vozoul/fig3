@@ -19,11 +19,13 @@ const SignForm = () => {
     return (
         <form className="" onSubmit={submit}>
             <h3>{(signIn)? "Connection" : "Inscription"}</h3>
+            <hr />
             <div className='on-off-choice'>
-                <div>Inscription</div>
+                <div>Inscription  {"<---"}</div>
                 <SwitchButton id="sign" action={toggleSign} />
-                <div>Connection</div>
+                <div>{"--->"} Connection</div>
             </div>
+            <hr />
             <div>
                 <label htmlFor="name">Name</label>
                 <input id="name" name="name" type="text" />

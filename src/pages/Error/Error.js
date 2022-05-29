@@ -6,7 +6,7 @@ const Error = () => {
     const {toggleSectionTitle} = useContext(AppContext)
 
     useEffect(() => {
-        toggleSectionTitle('Error')
+        toggleSectionTitle('Une Erreur est survenue')
     }, [toggleSectionTitle])
 
     return (

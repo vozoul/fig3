@@ -11,7 +11,7 @@ const Members = () => {
     const {toggleSectionTitle} = useContext(AppContext)
 
     useEffect(() => {
-        toggleSectionTitle('Members')
+        toggleSectionTitle('Le STAFF FIG')
     }, [toggleSectionTitle])
 
     const getHeight = () => {

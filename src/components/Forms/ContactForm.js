@@ -1,8 +1,8 @@
 import {useContext} from 'react'
 import { AppContext } from 'services/contexts/AppContext';
-import "./AddServerForm.css"
+import "./ContactForm.css"
 
-const AddServerForm = () => {
+const ContactForm = () => {
 
     const {toggleModal} = useContext(AppContext)
 
@@ -14,16 +14,18 @@ const AddServerForm = () => {
 
     return (
         <form className="" onSubmit={submit}>
-            <h3>Add Server</h3>
+            <h3>Nous Contacter</h3>
             <div>
                 <label htmlFor="name">Name</label>
                 <input id="name" name="name" type="text" />
             </div><div>
-                <label htmlFor="host">Host</label>
+                <label htmlFor="host">Object</label>
                 <input id="host" name="host" type="text" />
             </div><div>
-                <label htmlFor="port">Port</label>
-                <input id="port" name="port" type="text" />
+                <label htmlFor="port">Message</label>
+                <textarea id="port" name="port">
+                    
+                </textarea>
             </div>
             <div style={{float: "right"}}>
                 <button type="submit">Submit</button>
@@ -32,4 +34,4 @@ const AddServerForm = () => {
     )
 }
 
-export default AddServerForm
+export default ContactForm

@@ -24,7 +24,6 @@
     background: transparent;
     margin-left: 10px;
     height: 40px;
-    z-index: 100000;
 }
 
 .brand-name {
@@ -32,7 +31,6 @@
     margin-left: 10px;
     font-size: larger;
     color: var(--brand-txt-color);
-    z-index: 100000;
 }
 
 @media screen and (max-width: 640px){

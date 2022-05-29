@@ -9,7 +9,7 @@ const Home = () => {
     const {toggleSectionTitle} = useContext(AppContext)
 
     useEffect(() => {
-        toggleSectionTitle('Home')
+        toggleSectionTitle('ACCUEIL')
     }, [toggleSectionTitle])
 
     const getHeight = () => {

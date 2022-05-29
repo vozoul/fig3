@@ -13,6 +13,6 @@ export {default as MemberCard} from './UI_Components/Cards/MemberCard'
 export {default as ServerCard} from './UI_Components/Cards/ServerCard'
 
 // Forms components
-export {default as AddServerForm} from './UI_Components/Forms/AddServerForm'
-export {default as ContactForm} from './UI_Components/Forms/ContactForm'
-export {default as SignForm} from './UI_Components/Forms/SignForm'
+export {default as AddServerForm} from './Forms/AddServerForm'
+export {default as ContactForm} from './Forms/ContactForm'
+export {default as SignForm} from './Forms/SignForm'
