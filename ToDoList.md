@@ -5,6 +5,9 @@
 - - [x] thème dark / light, 
 - - [x] contenu scrollable dynamique
 - - [x] persistance d'état menu & thème
+- - [x] navigations par onglets
+    - [x] carte server (évolution à venir)
+    - [x] page membre
 
 ## En cours:
 - - [ ] navigation
@@ -13,6 +16,7 @@
     - [x] servers
     - [ ] events
     - [x] contact
+    - [x] sign-in/sign-up
 
 - - [ ] serveurs 
     - [x] carte par unité
@@ -40,12 +44,9 @@
 
 
 
-- - [ ] navigations par onglets
-    - [x] carte server (évolution à venir)
-    - [ ] page membre
 
 ## A faire:
-- - [ ] contact à transformer en modale
+- - [x] contact à transformer en modale
 
 - - [ ] users
     - [ ] enregistrer un utilisateur
@@ -57,7 +58,7 @@
 - - [ ] gestion des évents 
     - [ ] definir les specs
 
-## Back-Office
+# Back-Office
 
 - - [ ] API
     - [ ] endpoints api
