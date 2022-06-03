@@ -11,8 +11,8 @@ const Error = () => {
 
     return (
         <div className="container">
-        <h1>404 - Error Page</h1>
-        <p>Page not found !</p>
+            <h1>404 - Error Page</h1>
+            <p>Page not found !</p>
         </div>
     )
 }

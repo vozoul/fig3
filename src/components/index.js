@@ -1,6 +1,7 @@
 // Layout components
 export {default as Brand} from './Layouts/Brand/Brand'
 export {default as Menu} from './Layouts/Menu/Menu'
+export {default as Container} from './Layouts/Container/Container'
 export {default as Socials} from './Layouts/Socials/Socials'
 export {default as Footer} from './Layouts/Footer/Footer'
 

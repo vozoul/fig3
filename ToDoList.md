@@ -10,6 +10,7 @@
     - [x] page membre
 
 ## En cours:
+
 - - [ ] navigation
     - [x] home
     - [x] membres
@@ -61,6 +62,5 @@
 # Back-Office
 
 - - [ ] API
-    - [ ] endpoints api
-    - [ ] liens api 
     - [ ] actions
+    - [ ] endpoints api
