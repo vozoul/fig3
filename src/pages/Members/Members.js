@@ -1,12 +1,9 @@
-import React, {useRef, useEffect, useState, useContext} from "react"
+import React, { useEffect, useState, useContext} from "react"
 import {Container, MemberList} from "components"
 import {AppContext} from "services/contexts/AppContext"
 import "./Members.css"
 
 const Members = () => {
-    const eRef = useRef()
-    const [hght, setHght] = useState()
-    const [inHght, setInHght] = useState()
     const [show, setShow] = useState("all")
     const {toggleSectionTitle} = useContext(AppContext)
 
@@ -14,28 +11,9 @@ const Members = () => {
         toggleSectionTitle('Le STAFF FIG')
     }, [toggleSectionTitle])
 
-    // const getHeight = () => {
-    //     const nh = eRef.current?.clientHeight
-    //     setHght(nh)
-    //     const nih = document.querySelector('.container.inner')?.scrollHeight
-    //     setInHght(nih)
-    // }
-
-    // useEffect(() => {
-    //     window.addEventListener("load", getHeight)
-    //     window.addEventListener("mousemove", getHeight)
-    //     window.addEventListener("mouseout", getHeight)
-    //     if (inHght > hght) {
-    //         eRef.current.classList.add('scrollable')
-    //     } else {
-    //         eRef.current.classList.remove('scrollable')
-    //     }
-    // }, [inHght, hght])
-
     return (
-        <div className="container">
+        <Container>
             <div className="navigator">
-                {/* //TODO */}
                 <div className="element" onClick={() => setShow("admin")}>
                     <img src="./media/img/svg/fig_rouge.svg" alt="admin" />
                     <p>admins</p>
@@ -51,10 +29,10 @@ const Members = () => {
                     <p>newbies</p></div>
                 <div className="element" onClick={() => setShow("all")}>ALL</div>
             </div>
-            <Container className="container inner" >
+            <div className="container">
                 <MemberList show={show} />
-            </Container>
-        </div>
+            </div>
+        </Container>
     )
 }
 

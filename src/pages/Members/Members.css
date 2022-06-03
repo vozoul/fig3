@@ -1,13 +1,17 @@
 .navigator {
-    /* position: relative; */
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    top: 30px;
 }
 
-.container.inner {
+.container .container {
     width: 100%;
+}
+
+.container .container {
+    margin-top: 110px;
 }
 
 .element {
