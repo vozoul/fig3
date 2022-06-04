@@ -8,7 +8,6 @@ const AddServerForm = () => {
 
     const submit = (e) => {
         e.preventDefault()
-        console.log('submitted')
         toggleModal()
     };
 

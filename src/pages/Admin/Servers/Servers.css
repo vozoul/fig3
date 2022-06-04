@@ -1,0 +1,25 @@
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 5px 0;
+    padding: 0 20px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(65, 65, 65, 0.774) 5%, rgba(204, 204, 230, 0), rgba(65, 65, 65, 0.774) 95%);
+}
+
+.line img {
+    height: 40px;
+    width: 40px;
+}
+
+.line.header > div {
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+
+.line > * {
+    flex: 1;
+}

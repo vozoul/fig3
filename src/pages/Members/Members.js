@@ -11,12 +11,12 @@ const Members = () => {
     }, [toggleSectionTitle])
 
     return (
-        <Container>
+        <div className="container">
             <Navigator setShow={setShow} />
-            <div className="container">
+            <Container>
                 <MemberList show={show} />
-            </div>
-        </Container>
+            </Container>
+        </div>
     )
 }
 

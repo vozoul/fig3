@@ -1,0 +1,35 @@
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 110px;
+    right: 20px;
+    /* left: var(--deployed-menu); */
+}
+
+.nav a {
+    position: relative;
+    background: var(--sec-bg-color);
+    margin: 5px;
+    border-radius: 25px;
+    padding: 5px 20px;
+    box-shadow: 0 0 7px 0 #b5bbbe;
+    transition: all .05s ease;
+}
+
+.nav a span {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 120%;
+    color: var(--pri-txt-color) 
+}
+
+.nav a:hover {
+    background: rgba( 255,255,255, 0.5);
+    color: #353535;
+}
+
+.nav a:hover > span {
+    display: block;
+}

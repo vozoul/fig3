@@ -1,0 +1,42 @@
+import React, { useEffect, useContext } from "react"
+import { Activity } from "components"
+import { AppContext } from "services/contexts/AppContext"
+import servers from 'services/fakesData/servers'
+import "./Servers.css"
+
+const AdminServers = () => {
+    const { toggleSectionTitle } = useContext(AppContext)
+
+    useEffect(() => {
+        toggleSectionTitle('Les membres inscrits')
+    }, [toggleSectionTitle])
+
+    return (
+        <>
+            <div className="line header">
+                <div>Actions</div>
+                <div>Avatar</div>
+                <div>Title</div>
+                <div>Host</div>
+                <div>Port</div>
+                <div>Slots</div>
+            </div>
+            {servers?.map((server) => {
+                const serv = server.info
+                return (
+                        <div key={server.id} className="line" >
+                            <Activity />
+                            <div>{serv.picto && <img src={"/media/" + serv.picto} />}</div>
+                            <div>{serv.title}</div>
+                            <div>{serv.host}</div>
+                            <div>{serv.port ?? "'default'"}</div>
+                            <div>{serv.slots}</div>
+                        </div>
+                )
+            }
+            )}
+        </>
+    )
+}
+
+export default AdminServers

@@ -1,6 +1,6 @@
 import React from "react"
 import { ServerCard } from "components"
-import Servers from "services/fakesData/servers_long"
+import Servers from "services/fakesData/servers"
 import "./Lists.css"
 
 const ServerList = () => {

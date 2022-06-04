@@ -10,14 +10,17 @@ const Navigator = (props) => {
                 <p>admins</p>
             </div>
             <div className="element" onClick={() => setShow("modo")}>
-                <img src="./media/img/svg/fig_orange.svg" alt="admin" />
-                <p>modos</p></div>
+                <img src="./media/img/svg/fig_orange.svg" alt="modo" />
+                <p>modos</p>
+            </div>
             <div className="element" onClick={() => setShow("member")}>
-                <img src="./media/img/svg/fig_violet.svg" alt="admin" />
-                <p>membres</p></div>
+                <img src="./media/img/svg/fig_violet.svg" alt="member" />
+                <p>membres</p>
+            </div>
             <div className="element" onClick={() => setShow("new")}>
-                <img src="./media/img/svg/fig_bleu.svg" alt="admin" />
-                <p>newbies</p></div>
+                <img src="./media/img/svg/fig_bleu.svg" alt="new" />
+                <p>newbies</p>
+            </div>
             <div className="element" onClick={() => setShow("all")}>ALL</div>
         </div>
     )

@@ -1,11 +1,11 @@
-import { useState, useEffect, useContext } from 'react'
-import { UserContext } from "services/contexts/UserContext"
+import {useState, useEffect, useContext} from 'react'
+import {UserContext} from "services/contexts/UserContext"
 import './Cards.css'
 
-const MemberCard = ({ props, show }) => {
+const MemberCard = ({props, show}) => {
 
-    const { id, pseudo, avatar, role } = props
-    const { user } = useContext(UserContext)
+    const {id, pseudo, avatar, role} = props
+    const {user} = useContext(UserContext)
 
     const [isRoled, setIsRoled] = useState("guest")
 

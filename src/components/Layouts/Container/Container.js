@@ -5,11 +5,10 @@ const Container = (props) => {
     const [hght, setHght] = useState()
     const [inHght, setInHght] = useState()
 
-
     const getHeight = () => {
         const nh = eRef.current?.clientHeight
         setHght(nh)
-        const nih = document.querySelector('.container')?.scrollHeight
+        const nih = document.querySelector('.wrapper')?.scrollHeight
         setInHght(nih)
     }
 
@@ -22,9 +21,11 @@ const Container = (props) => {
         } else {
             eRef.current.classList.remove('scrollable')
         }
+
     }, [inHght, hght])
+
     return (
-        <div ref={eRef} className="container">
+        <div ref={eRef} className="wrapper">
             {props.children}
         </div>
     )

@@ -2,6 +2,7 @@ module.exports = [
     {
         "id": "8fbb5d0d-d392-4ee3-991e-163723sdfg2704",
         "pseudo": "Pozoul",
+        "mail": "aze@aze.fr",
         "avatar": null,
         "steamId": null,
         "role": 999,
@@ -9,7 +10,7 @@ module.exports = [
     },
     {
         "id": "8fbb5d0d-d392-4ee3-991e-sdg",
-        "pseudo": "Vozoul",
+        "pseudo": "Léon",
         "avatar": null,
         "steamId": null,
         "role": 100,
@@ -17,7 +18,7 @@ module.exports = [
     },
     {
         "id": "8fbb5d0d-d392-4ee3-991e-hgfg",
-        "pseudo": "Vozoul",
+        "pseudo": "Ursul",
         "avatar": null,
         "steamId": null,
         "role": 700,
@@ -57,7 +58,7 @@ module.exports = [
     },
     {
         "id": "8fbb5d0d-d392-4ee3-991e-ugjkvh",
-        "pseudo": "Vozoul",
+        "pseudo": "Trudy",
         "avatar": null,
         "steamId": null,
         "role": 1000,
@@ -129,10 +130,10 @@ module.exports = [
     },
     {
         "id": "8fbb5d0d-d392-4ee3-991e-jsdyjytdxwfgwdh",
-        "pseudo": "Vozoul",
+        "pseudo": "Bouli",
         "avatar": null,
         "steamId": null,
-        "role": 700,
+        "role": 300,
         "createdAt": "2022-01-28T10:53:43.866Z"
     },
     {

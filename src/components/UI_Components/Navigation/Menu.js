@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import { SwitchButton, ContactForm, SignForm } from "components";
 import { AppContext } from "services/contexts/AppContext";
+import { UserContext } from "services/contexts/UserContext";
 import './Menu.css'
 
 const Menu = () => {
 
     // Constantes
     const { menu, theme, toggleTheme, toggleMenu, setModalBg, setUseModal, toggleModal } = useContext(AppContext)
+    const { user } = useContext(UserContext)
 
     const eRef = useRef()
     const [menuClass, setMenuClass] = useState('menu')
@@ -53,23 +55,27 @@ const Menu = () => {
         <div className={(menuClass)}>
             <ul id="menu" ref={eRef} className="menu-list">
                 <Link to="/" className="menu-item">
-                    <img src="./media/img/svg/home.svg" alt="" />
+                    <img src="/media/img/svg/home.svg" alt="" />
                     <span>Home</span>
                 </Link>
                 <Link to="/members" className="menu-item">
-                    <img src="./media/img/svg/membres.svg" alt="" />
+                    <img src="/media/img/svg/membres.svg" alt="" />
                     <span>Members</span>
                 </Link>
                 <Link to="/servers" className="menu-item">
-                    <img src="./media/img/svg/servers.svg" alt="" />
+                    <img src="/media/img/svg/servers.svg" alt="" />
                     <span>Servers</span>
                 </Link>
                 <p className="menu-item" onClick={() => contactus()}>
-                    <img src="./media/img/svg/contact.svg" alt="" />
+                    <img src="/media/img/svg/contact.svg" alt="" />
                     <span>Contact</span>
                 </p>
+                {user.isAdmin && <Link to="/dashboard" className="menu-item">
+                    <img src="/media/img/svg/servers.svg" alt="" />
+                    <span>Manager</span>
+                </Link>}
                 <p className="menu-item arrow" onClick={toggleMenu}>
-                    <img src="./media/img/svg/rightArrow.svg" alt="" />
+                    <img src="/media/img/svg/rightArrow.svg" alt="" />
                     <span>Collapse</span>
                 </p>
             </ul>
