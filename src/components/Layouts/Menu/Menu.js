@@ -1,13 +1,13 @@
-import React, {useState, useEffect, useRef, useContext} from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
+import { SwitchButton, ContactForm, SignForm } from "components";
 import { AppContext } from "services/contexts/AppContext";
 import './Menu.css'
-import {SwitchButton, ContactForm, SignForm} from "components";
 
 const Menu = () => {
 
     // Constantes
-    const {menu, theme, toggleTheme, toggleMenu, setModalBg, setUseModal, toggleModal} = useContext(AppContext)
+    const { menu, theme, toggleTheme, toggleMenu, setModalBg, setUseModal, toggleModal } = useContext(AppContext)
 
     const eRef = useRef()
     const [menuClass, setMenuClass] = useState('menu')
@@ -16,7 +16,7 @@ const Menu = () => {
 
     // Méthodes
     useEffect(() => {
-            (menu === "true") ? setMenuClass('menu collapsed') : setMenuClass('menu')
+        (menu === "true") ? setMenuClass('menu collapsed') : setMenuClass('menu')
     }, [menu, toggleMenu])
 
     const getListHeight = () => {
@@ -25,7 +25,7 @@ const Menu = () => {
         const nih = document.querySelector('#menu').scrollHeight
         setInHght(nih)
     }
-    
+
     useEffect(() => {
         window.addEventListener("load", getListHeight)
         window.addEventListener("mouseout", getListHeight)
@@ -47,7 +47,7 @@ const Menu = () => {
         setUseModal(<SignForm />)
         toggleModal()
     }
-    
+
     // Partie visuelle
     return (
         <div className={(menuClass)}>

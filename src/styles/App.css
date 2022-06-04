@@ -19,13 +19,13 @@ Header {
 }
 
 .sec-title::after {
-    content: "";
-    position: relative;
-    top: 50px;
-    left: -50%;
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    border-top: 10px solid var(--btn-bg-color);
+  content: "";
+  position: relative;
+  top: 50px;
+  left: -50%;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 10px solid var(--btn-bg-color);
 }
 
 .App {
@@ -45,19 +45,20 @@ Header {
   position: relative;
   width: calc(100vw - var(--deployed-menu));
   height: calc(100vh - 130px);
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   padding: 0 20px;
-  
+
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.container.scrollable, .container .container.scrollable {
+.container.scrollable,
+.container .container.scrollable {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -65,18 +66,27 @@ Header {
   padding: 20px;
 }
 
-.container::-webkit-scrollbar-track { 
-  background-color: var(--pri-bg-color); 
-  border: 3px solid var(--sec-bg-color);
-  border-radius: 9px; 
-} 
+.container .container {
+  width: 100%;
+}
 
-.menu.collapsed + .container {
+.container .container {
+  margin-top: 110px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: var(--pri-bg-color);
+  border: 3px solid var(--sec-bg-color);
+  border-radius: 9px;
+}
+
+.menu.collapsed+.container {
   width: calc(100vw - var(--collapsed-menu));
 }
 
-input, textarea {
-  width:100%;
+input,
+textarea {
+  width: 100%;
   border: 1px solid var(--sec-bg-color);
   background: var(--pri-bg-color);
   color: var(--pri-txt-color);

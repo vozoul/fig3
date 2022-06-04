@@ -1,6 +1,6 @@
 import "./SwitchButton.css"
 
-const SwitchButton = ({id, action}) => {
+const SwitchButton = ({ id, action }) => {
 
     return (
         <label className="switch">

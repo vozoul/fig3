@@ -1,11 +1,10 @@
-import React, { useEffect, useContext} from "react"
+import React, { useEffect, useContext } from "react"
 import { AppContext } from "services/contexts/AppContext"
-import {Container} from "components"
-import "./Home.css"
+import { Container } from "components"
 
 const Home = () => {
-    const {toggleSectionTitle} = useContext(AppContext)
-    
+    const { toggleSectionTitle } = useContext(AppContext)
+
     useEffect(() => {
         toggleSectionTitle('ACCUEIL')
     }, [toggleSectionTitle])

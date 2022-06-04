@@ -1,10 +1,10 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
+import { AppContext } from "services/contexts/AppContext"
 import "./Socials.css"
-import {AppContext} from "services/contexts/AppContext"
 
 const Socials = () => {
 
-    const {theme} = useContext(AppContext)
+    const { theme } = useContext(AppContext)
 
     return <div className="socials">
         <div className="social-list">

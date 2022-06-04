@@ -11,7 +11,7 @@
 
     height: 100vh;
     width: 100vw;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 
     z-index: 100000;
 }
@@ -22,7 +22,7 @@
     position: relative;
     padding: 20px;
     background: var(--sec-bg-color);
-    
+
     border-radius: 15px;
     box-shadow: 0 0 5px -1px #fff;
     z-index: 100001;
@@ -52,13 +52,13 @@
     justify-content: center;
     top: -30px;
     right: 12px;
-    
+
     background: var(--btn-bg-color);
     color: var(--brand-txt-color);
-    
+
     height: 30px;
     width: 30px;
-    
+
     border: none;
     border-radius: 50%;
     box-shadow: 0 0 3px #fff;

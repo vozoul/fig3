@@ -6,14 +6,6 @@
     top: 30px;
 }
 
-.container .container {
-    width: 100%;
-}
-
-.container .container {
-    margin-top: 110px;
-}
-
 .element {
     position: relative;
     display: flex;

@@ -1,9 +1,9 @@
-import {useEffect, useContext} from "react"
+import { useEffect, useContext } from "react"
 import { AppContext } from "services/contexts/AppContext"
 
 const Error = () => {
-    
-    const {toggleSectionTitle} = useContext(AppContext)
+
+    const { toggleSectionTitle } = useContext(AppContext)
 
     useEffect(() => {
         toggleSectionTitle('Une Erreur est survenue')

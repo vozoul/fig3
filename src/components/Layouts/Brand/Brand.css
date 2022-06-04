@@ -7,8 +7,8 @@
 
     background: var(--btn-bg-color);
     border-radius: 0 25px 25px 0;
-    
-    
+
+
     cursor: pointer;
     color: var(--pri-txt-color);
 }
@@ -33,10 +33,11 @@
     color: var(--brand-txt-color);
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
     .brand {
         width: var(--collapsed-menu);
     }
+
     .brand-name {
         display: none;
     }

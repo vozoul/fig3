@@ -13,7 +13,8 @@
   transition: all 0.15s ease;
 }
 
-*:visited, *:any-link {
+*:visited,
+*:any-link {
   color: inherit;
 }
 

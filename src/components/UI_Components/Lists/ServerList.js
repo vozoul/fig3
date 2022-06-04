@@ -1,11 +1,9 @@
 import React from "react"
-import {ServerCard} from "components"
+import { ServerCard } from "components"
 import Servers from "services/fakesData/servers_long"
 import "./Lists.css"
 
 const ServerList = () => {
-
-    //TODO fetch(Servers)
 
     return (
         <div className="serv-list">

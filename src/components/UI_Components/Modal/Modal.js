@@ -1,9 +1,9 @@
-import {useContext} from 'react'
+import { useContext } from 'react'
 import { AppContext } from 'services/contexts/AppContext'
 import "./Modal.css"
 
 const Modal = () => {
-    const {useModal, toggleModal, modalBg} = useContext(AppContext)
+    const { useModal, toggleModal, modalBg } = useContext(AppContext)
 
     document.documentElement.style.setProperty("--modal-bg", modalBg)
 

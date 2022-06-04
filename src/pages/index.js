@@ -1,4 +1,4 @@
-export {default as Home} from "./Home/Home";
-export {default as Servers} from "./Servers/Servers";
-export {default as Members} from "./Members/Members";
-export {default as Error} from "./Error/Error";
+export { default as Home } from "./Home/Home";
+export { default as Servers } from "./Servers/Servers";
+export { default as Members } from "./Members/Members";
+export { default as Error } from "./Error/Error";

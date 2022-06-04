@@ -1,4 +1,5 @@
-.serv-list, .member-list {
+.serv-list,
+.member-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

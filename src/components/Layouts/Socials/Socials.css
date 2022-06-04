@@ -24,7 +24,8 @@
     cursor: pointer;
 }
 
-.social-item img, .social-item svg {
+.social-item img,
+.social-item svg {
     height: 27px;
     width: 27px;
 }

@@ -1,11 +1,11 @@
-import {useState, useContext} from 'react'
+import { useState, useContext } from 'react'
 import { AppContext } from 'services/contexts/AppContext';
-import {SwitchButton} from 'components'
+import { SwitchButton } from 'components'
 import "./SignForm.css"
 
 const SignForm = () => {
 
-    const {toggleModal} = useContext(AppContext)
+    const { toggleModal } = useContext(AppContext)
 
     const [signIn, setSignIn] = useState(false)
     const toggleSign = () => setSignIn(!signIn)
@@ -18,7 +18,7 @@ const SignForm = () => {
 
     return (
         <form className="" onSubmit={submit}>
-            <h3>{(signIn)? "Connection" : "Inscription"}</h3>
+            <h3>{(signIn) ? "Connection" : "Inscription"}</h3>
             <hr />
             <div className='on-off-choice'>
                 <div>Inscription  {"<---"}</div>
@@ -46,12 +46,12 @@ const SignForm = () => {
                 <div>
                     <label htmlFor="port">Description</label>
                     <textarea id="port" name="port">
-                        
+
                     </textarea>
                 </div>
             </div>
             }
-            <div style={{float: "right"}}>
+            <div style={{ float: "right" }}>
                 <button type="submit">Submit</button>
             </div>
         </form>

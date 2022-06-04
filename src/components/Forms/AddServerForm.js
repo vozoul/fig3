@@ -1,10 +1,10 @@
-import {useContext} from 'react'
+import { useContext } from 'react'
 import { AppContext } from 'services/contexts/AppContext';
 import "./AddServerForm.css"
 
 const AddServerForm = () => {
 
-    const {toggleModal} = useContext(AppContext)
+    const { toggleModal } = useContext(AppContext)
 
     const submit = (e) => {
         e.preventDefault()
@@ -25,7 +25,7 @@ const AddServerForm = () => {
                 <label htmlFor="port">Port</label>
                 <input id="port" name="port" type="text" />
             </div>
-            <div style={{float: "right"}}>
+            <div style={{ float: "right" }}>
                 <button type="submit">Submit</button>
             </div>
         </form>

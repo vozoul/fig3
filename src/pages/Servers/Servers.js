@@ -1,23 +1,17 @@
-import React, {useEffect, useState, useContext} from "react"
-import {Container, ServerList, AddServerForm} from "components"
-import {AppContext} from "services/contexts/AppContext"
-import {UserContext} from "services/contexts/UserContext"
-import "./Servers.css"
+import React, { useEffect, useContext } from "react"
+import { Container, ServerList, AddServerForm } from "components"
+import { AppContext } from "services/contexts/AppContext"
+import { UserContext } from "services/contexts/UserContext"
 
 const Servers = () => {
-    const user = useContext(UserContext)
-    const {toggleSectionTitle, toggleModal, setUseModal, setModalBg} = useContext(AppContext)
-    const [isAdmin, setIsAdmin] = useState(false)
-        
+    const { user } = useContext(UserContext)
+    const { toggleSectionTitle, toggleModal, setUseModal, setModalBg } = useContext(AppContext)
+
     const openForm = () => {
         setModalBg("url('./media/img/svg/bg_servers.svg')")
         setUseModal(<AddServerForm />)
         toggleModal()
     }
-
-    useEffect(() => {
-        setIsAdmin(true)
-    }, [user, isAdmin])
 
     useEffect(() => {
         toggleSectionTitle('Nos Serveurs')
@@ -26,7 +20,7 @@ const Servers = () => {
     return (
         <Container>
             <ServerList />
-            {(isAdmin && <button className="addServer_button" onClick={openForm}>+</button>)}
+            {(user?.isAdmin && <button className="addServer_button" onClick={openForm}><i className='bx bx-plus' ></i></button>)}
         </Container>
     )
 }

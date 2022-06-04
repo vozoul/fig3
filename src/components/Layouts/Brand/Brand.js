@@ -1,10 +1,10 @@
 import React from "react";
 import config from "services/config/config.js";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Brand.css";
 
 const Brand = () => {
-    
+
     return (
         <Link to="/" className="brand">
             <img

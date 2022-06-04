@@ -26,7 +26,7 @@ const AppContextProvider = (props) => {
         const nTheme = (theme === "dark") ? "light" : "dark"
         setTheme(nTheme)
     }
-    
+
     const toggleSectionTitle = (title) => {
         setSectionTitle(title)
     }

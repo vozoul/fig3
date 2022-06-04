@@ -1,10 +1,10 @@
-import {useContext} from 'react'
+import { useContext } from 'react'
 import { AppContext } from 'services/contexts/AppContext';
 import "./ContactForm.css"
 
 const ContactForm = () => {
 
-    const {toggleModal} = useContext(AppContext)
+    const { toggleModal } = useContext(AppContext)
 
     const submit = (e) => {
         e.preventDefault()
@@ -24,10 +24,10 @@ const ContactForm = () => {
             </div><div>
                 <label htmlFor="port">Message</label>
                 <textarea id="port" name="port">
-                    
+
                 </textarea>
             </div>
-            <div style={{float: "right"}}>
+            <div style={{ float: "right" }}>
                 <button type="submit">Submit</button>
             </div>
         </form>

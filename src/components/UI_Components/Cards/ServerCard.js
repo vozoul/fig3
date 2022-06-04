@@ -1,4 +1,4 @@
-import {useRef, useEffect, useState} from "react"
+import { useRef, useEffect, useState } from "react"
 import './Cards.css'
 
 const ServerCard = ({ props }) => {
@@ -90,15 +90,13 @@ const ServerCard = ({ props }) => {
                         </div>
                     </div>
                     <div className="card-content-list" ref={eRef}>
-
-                    
-                    {players.length >= 1 && players.map(player => {
-                        return (
-                            <p key={player.username}>- {player.username}</p>
+                        {players.length >= 1 && players.map(player => {
+                            return (
+                                <p key={player.username}>- {player.username}</p>
                             )
                         }
-                    )}
-                    {players.length === 0 && <p>No Players on server</p>}
+                        )}
+                        {players.length === 0 && <p>No Players on server</p>}
                     </div>
                 </div>
             </form>
@@ -107,7 +105,7 @@ const ServerCard = ({ props }) => {
                     key={props.id + "_info"}
                     className={(toggleTabs === "info") ? "active-tab" : undefined}
                     onClick={() => toggleTab('info')}
-                    >
+                >
                     {picture("info")}
                 </div>
                 <div
