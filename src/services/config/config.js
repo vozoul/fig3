@@ -1,6 +1,6 @@
 module.exports = {
     "appName": "FIGS 3.0",
-    "brandName": "Les Figues",
+    "brandName": "Les FIGs",
     "logo": {
         "image": "./media/img/svg/logo.svg",
         "description": ""

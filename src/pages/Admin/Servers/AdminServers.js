@@ -12,10 +12,10 @@ const AdminServers = () => {
     }, [toggleSectionTitle])
 
     return (
-        <>
+        <div className="contenu">
             <div className="line header">
                 <div>Actions</div>
-                <div>Avatar</div>
+                <div>Picto</div>
                 <div>Title</div>
                 <div>Host</div>
                 <div>Port</div>
@@ -35,7 +35,7 @@ const AdminServers = () => {
                 )
             }
             )}
-        </>
+        </div>
     )
 }
 

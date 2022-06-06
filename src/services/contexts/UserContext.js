@@ -6,7 +6,7 @@ const UserContextProvider = (props) => {
 
     const [user, setUser] = useState({
         // isAdmin: true,
-        name: "Vozoul"
+        // name: "Vozoul"
     })
 
     return (

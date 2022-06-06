@@ -1,3 +1,11 @@
+.contenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
 .line {
     display: flex;
     justify-content: space-between;
@@ -6,12 +14,13 @@
     margin: 5px 0;
     padding: 0 20px;
     width: 100%;
-    background: linear-gradient(to top, rgba(65, 65, 65, 0.774) 5%, rgba(204, 204, 230, 0), rgba(65, 65, 65, 0.774) 95%);
+    max-height: 30px;
+    background: linear-gradient(to top, rgba(64, 46, 68, 0.774) 7%, rgba(204, 204, 230, 0), rgba(64, 46, 68, 0.774) 93%);
 }
 
 .line img {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
 }
 
 .line.header > div {

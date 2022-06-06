@@ -5,6 +5,9 @@ import users from 'services/fakesData/users'
 import "./Users.css"
 
 const Users = () => {
+
+    // const users = []
+
     const { toggleSectionTitle } = useContext(AppContext)
 
     useEffect(() => {
@@ -12,7 +15,7 @@ const Users = () => {
     }, [toggleSectionTitle])
 
     return (
-        <>
+        <div className="contenu">
             <div className="line header">
                 <div>Actions</div>
                 <div>Avatar</div>
@@ -21,6 +24,7 @@ const Users = () => {
                 <div>Steamid</div>
                 <div>Role</div>
             </div>
+            {users.length === 0 && <div className="line" ><p>No users to display</p></div>}
             {users?.map((user) => {
                 return (
                         <div key={user.id} className="line" >
@@ -34,7 +38,7 @@ const Users = () => {
                 )
             }
             )}
-        </>
+        </div>
     )
 }
 
