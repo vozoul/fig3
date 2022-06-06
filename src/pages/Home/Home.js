@@ -15,10 +15,10 @@ const Home = () => {
                 <h3>Our next event</h3>
                 <div>
                     Inauguration de la F.I.G.
-                    <h4>La Fédération Internationnal de Gaming</h4>,
+                    <h4>La Fédération Internationnal de Gaming,</h4>
                     vous invite pour leur nouvelle formule,<br/>
                     nous ouvrons prochainement nos portes,<br/>
-                    pour vous présenter les diférents univers et plateforme sur lequelles nous jouons,<br/>
+                    pour vous présenter les différents univers et plateformes sur lequelles nous jouons,<br/>
                     nous vous invitons par la même occasion à vous fendre la FIG avec nous !!!
                 </div>
             </div>
