@@ -1,10 +1,13 @@
 import React, { useEffect, useContext } from "react"
 import { Activity } from "components"
 import { AppContext } from "services/contexts/AppContext"
-import servers from 'services/fakesData/servers'
+// import servers from 'services/fakesData/servers'
 import "./Servers.css"
 
 const AdminServers = () => {
+
+    const servers = fetch("http://localhost/servers").then(data => console.log(data))
+
     const { toggleSectionTitle } = useContext(AppContext)
 
     useEffect(() => {

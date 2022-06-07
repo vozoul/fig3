@@ -1,6 +1,9 @@
 module.exports = {
-    "appName": "FIGS 3.0",
+    "appName": "FIGS",
+    "version": " 3.0",
     "brandName": "Les FIGs",
+    // "apiUrl": "https://api.fig.fr",
+    "apiUrl": "http://localhost",
     "logo": {
         "image": "./media/img/svg/logo.svg",
         "description": ""
