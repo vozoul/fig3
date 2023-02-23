@@ -29,8 +29,6 @@ function App() {
     }
   }, [theme, toggleTheme])
 
-
-
   return (
     <div className="App">
       <BrowserRouter>

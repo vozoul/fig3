@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate } from "react-router-dom"
 import { AppContext } from "services/contexts/AppContext"
 import { UserContext } from "services/contexts/UserContext"
 import { Container, Nav } from "components"
-import { Users, AdminServers as Servers } from "pages"
+import { Users, AdminServers } from "pages"
 
 const Index = () => {
     return (
@@ -39,7 +39,7 @@ const Dashboard = () => {
                 {/* <Route path="" element={(user.isAdmin === false || user.isAdmin === undefined) ? (<Navigate replace to="/error" />) : (<Index />)} /> */}
                 <Route path="" element={<Index />} />
                 <Route path="users" element={<Users />} />
-                <Route path="servers" element={<Servers />} />
+                <Route path="servers" element={<AdminServers />} />
             </Routes>
         </Container>
     )

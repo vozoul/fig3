@@ -2,22 +2,22 @@ import React, {useState, useEffect} from "react"
 import axios from "axios"
 import { ServerCard } from "components"
 import Config from "services/config/config"
-// import Servers from "services/fakesData/servers"
+import Servers from "services/fakesData/servers"
 import "./Lists.css"
 
 const ServerList = () => {
 
-    // const Servers = await fetch("http://localhost/servers", {method: "get"})
-    const [servers, setServers] = useState([]);
+    // const Servers = fetch("http://localhost/servers", {method: "get"})
+    const [servers, setServers] = useState(Servers);
     
-    useEffect(() => {
-        axios({
-            method: "get",
-            url: Config.apiUrl + "/servers"
-        })
-            .then(res => setServers(res.data))
-        // setServers(data)
-    }, [])
+    // useEffect(() => {
+    //     axios({
+    //         method: "get",
+    //         url: Config.apiUrl + "/servers"
+    //     })
+    //         .then(res => setServers(res.data))
+    //     // setServers(data)
+    // }, [])
 
     return (
         <div className="serv-list">

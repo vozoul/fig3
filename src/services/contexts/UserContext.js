@@ -5,8 +5,8 @@ export const UserContext = createContext()
 const UserContextProvider = (props) => {
 
     const [user, setUser] = useState({
-        // isAdmin: true,
-        // name: "Vozoul"
+        isAdmin: true,
+        name: "Vozoul"
     })
 
     return (
